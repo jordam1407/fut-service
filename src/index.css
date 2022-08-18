@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'NeuePlakRegular';
+  src: url('./fonts/Neue-Plak-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'NeuePlakBlack';
+  src: url('./fonts/NeuePlak-WideExtraBlack.ttf');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +15,455 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #EEE9E3;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1 {
+  font-family: 'NeuePlakBlack';
+  font-size: 24px;
+  margin: 0;
+}
+h2 {
+  font-family: 'NeuePlakRegular';
+  font-size: 24px;
+  margin: 0;
+}
+
+span {
+  font-family: 'NeuePlakRegular';
+  font-size: 20px;
+}
+
+header {
+  background-color: rgba(239, 234, 229, 1);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  top: 0;
+}
+
+footer {
+  background-color: rgba(239, 234, 229, 1);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-item {
+  font-family: 'NeuePlakBlack';
+  margin: 0px 35px;
+  color: black;
+  text-decoration: none;
+}
+
+.link {
+  font-family: 'NeuePlakBlack';
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-item:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-logo {
+  display: flex;
+  margin: 0px 30px;
+  flex-grow: 1;
+}
+
+.div-mother {
+  margin: 100px 0px;
+  width: 100%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.div-son {
+  align-self: center;
+  display: flex;
+  width: 80%;
+  height: 480px;
+  align-self: center;
+  text-align: center;
+  background-image: url('./images/eacom-franchise-hub-f23-hero-med-xl-7x2.png.adapt.crop5x2.1455w.png');
+  background-size: cover;
+  border-radius: 6px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.div-content-space {
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+  height: 480px;
+  padding: 30px;
+  text-align: left;
+}
+
+.home-img {
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-img1 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 160px;
+  transition: all .2s ease-in-out;
+}
+
+.home-img1:hover {
+  transform: scale(1.1);
+}
+
+.home-img1 span {
+  font-family: 'NeuePlakBlack';
+}
+
+.home-img1 img {
+  align-self: center;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* section video */
+
+.video {
+  margin-top: 50px;
+  width: 80%;
+  height: 480px;
+  align-self: center;
+  background-image: url('./images/fundo.png');
+  border-radius: 6px;
+  background-size: cover;
+  background-position: 0px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.div-content-space-video {
+  background-color: rgba(239, 234, 229, 0.6);
+  height: inherit;
+  display: flex;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.content {
+  padding: 30px;
+  width: 644px;
+  height: 374px;
+  align-self: center;
+}
+
+.content-text {
+  text-align: left;
+  padding: 30px;
+  width: 644px;
+  height: 374px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content1-text {
+  text-align: start;
+  padding: 30px;
+  width: 80%;
+  height: 374px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content1 {
+  padding: 30px;
+  width: 50%;
+  align-self: center;
+}
+
+.div-content-space1 {
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+  height: 420px;
+  padding: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
+.home-img2 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  transition: all .2s ease-in-out;
+}
+
+.home-img2:hover {
+  transform: scale(1.1);
+}
+
+.home-img2 span {
+  font-family: 'NeuePlakBlack';
+}
+
+.home-img2 img {
+  align-self: center;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.back {
+  background-color: rgba(239, 234, 229, 0.6);
+  display: flex;
+  justify-content: space-around;
+}
+
+/* CSS */
+.button-84 {
+  align-items: center;
+  background-color: initial;
+  background-image: linear-gradient(#464d55, #25292e);
+  border-radius: 8px;
+  border-width: 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .05);
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  font-family: 'NeuePlakBlack';
+  font-size: 18px;
+  height: 52px;
+  width: fit-content;
+  justify-content: center;
+  line-height: 1;
+  margin: 20px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 32px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 150ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  align-self: center;
+}
+
+.button-84:hover {
+  box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+  opacity: .85;
+}
+
+.button-84:active {
+  outline: 0;
+}
+
+.button-84:focus {
+  box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
+}
+
+@media (max-width: 420px) {
+  .button-84 {
+    height: 48px;
+  }
+}
+
+/* -------------------ABOUT STARTS HERE------------------------ */
+
+.div-son-about {
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 480px;
+  align-self: center;
+  text-align: center;
+  background-image: url('./images/fundo-about.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.div-content-space-about {
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+  height: 420px;
+  padding: 30px;
+  text-align: left;
+  justify-content: center;
+}
+
+.div-about {
+  margin: 30px 0px;
+}
+
+.content-text-about {
+  margin: 30px 0px;
+}
+
+.teamCard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.profile {
+  width: 150px;
+
+}
+
+
+.social {
+  width: 25px;
+  margin: 10px;
+  transition: all .2s ease-in-out;
+
+}
+.social:hover {
+  transform: scale(1.2);
+}
+
+.modes {
+  width: 50px;
+  margin: 10px;
+}
+
+
+.plat {
+  width: 30px;
+  margin: 10px;
+  transition: all .2s ease-in-out;
+
+}
+.plat:hover {
+  transform: scale(1.2);
+}
+
+.card-display {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  transition: all .2s ease-in-out;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.card-display:hover {
+  transform: scale(1.05);
+}
+
+.meet-about {
+  margin-top: 50px;
+  width: 80%;
+  align-self: center;
+  border-radius: 6px;
+  background-size: cover;
+  background-position: 0px;
+}
+
+.div-content-space-meet {
+  margin-top: 50px;
+  height: inherit;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: auto;
+}
+
+.content-about {
+  display: flex;
+  align-items: center;
+}
+
+/* ----------------------- CONTACT STARTS HERE ----------------------- */
+.div-son-contact {
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 480px;
+  align-self: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+}
+
+.div-form {
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.div-form input {
+  margin: 5px 0px;
+  font-family: 'NeuePlakRegular';
+  font-size: 16px;
+  height: 30px;
+  display: flex;
+  width:fit-content;
+  border-radius: 3px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: rgb(248, 248, 248);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.input {
+  margin: 5px 0px;
+  font-family: 'NeuePlakRegular';
+  font-size: 16px;
+  display: flex;
+  width:fit-content;
+  border-radius: 3px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: rgb(248, 248, 248);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
 }
