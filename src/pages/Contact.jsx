@@ -18,7 +18,7 @@ class About extends Component {
             <form className='div-form'>
                   <input className="input" placeholder='Enter your Name' id="name" type="text" />
                   <input className="input"placeholder='Enter a valid Email' id="name" type="text" />
-                  <textarea className="input"placeholder='Enter your Question' name="" id="" cols="60" rows="5" />
+                  <textarea className="input"placeholder='Enter your Question' name="" id="" cols="40" rows="5" />
                   <button className='button-84'>SUBMIT</button>
             </form>
           </div>
