@@ -1,26 +1,34 @@
 import React, { Component } from 'react';
-import cr7 from '../images/tela.png'
+import '../styles/rewards.css'
+import champs from "../images/futchamps.png"
+import rivals from "../images/rivals.png"
+import obj from "../images/sbc_big.png"
+import RewardsCard from '../components/RewardsCard';
+import '../styles/rewards.css'
 
 class Reward extends Component {
   render() {
     return (
       <div className='div-mother'>
-        <div className='div-son-about'>
-          <div className='div-content-space-about'>
-            <div>
-              <h1>WHO WE ARE?</h1>
-              <span>We're passionate FIFA players that decide to use our expertise to help people. We have 4 pro-players in the team, including our CEO Jordam Mendes. Over 150 orders completed for people in more then 10 countries. We're just getting started.</span>
+        <div className='div-son-rewards'>
+          <h1>CHOOSE ONE SERVICE</h1>
+          <div className='div-img'>
+            <div className='chose-img'>
+              <img src={rivals} alt="rivals" width="126px" />
+              <span>RIVALS</span>
             </div>
-            <div className='div-about'>
-              <h1>THIS SERVICE IS FOR YOU?</h1>
-              <span>It’s for people that love FIFA, and look to grow and improve the club, that strugle on competitive modes, or simply work a lot and don’t have enought time for it. We’ll help you.</span>
+            <div className='chose-img'>
+              <img src={champs} alt="champs" width="192px" />
+              <span>CHAMPS</span>
+            </div>
+            <div className='chose-img'>
+              <img src={obj} alt="obj" width="120px" />
+              <span>OBJETIVOS</span>
             </div>
           </div>
-          <div className='content-about'>
-            <img src={cr7} alt="CR7" width="700px"  />
-          </div>
+          <RewardsCard />
         </div>
-        </div>
+      </div>
     );
   }
 }

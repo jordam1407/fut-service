@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Team from '../components/Team';
 import cr7 from '../images/tela.png'
+import '../styles/about.css'
 
 class About extends Component {
   render() {

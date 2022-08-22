@@ -1,0 +1,107 @@
+.div-son-about {
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 570PX;
+  align-self: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+}
+
+.div-content-space-about {
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+  padding: 30px;
+  text-align: left;
+  justify-content: center;
+}
+
+.div-about {
+  margin: 30px 0px;
+}
+
+.content-about {
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+.meet-about {
+  margin-top: 50px;
+  width: 80%;
+  align-self: center;
+  border-radius: 6px;
+  background-size: cover;
+  background-position: 0px;
+}
+
+.div-content-space-meet {
+  margin-top: 50px;
+  height: inherit;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: auto;
+}
+
+/* Component Card styling */
+
+.card-display {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  transition: all .2s ease-in-out;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.card-display:hover {
+  transform: scale(1.05);
+}
+
+.profile {
+  width: 150px;
+}
+
+.modes {
+  width: 50px;
+  margin: 10px;
+}
+
+.social {
+  width: 25px;
+  margin: 10px;
+  transition: all .2s ease-in-out;
+
+}
+
+.social:hover {
+  transform: scale(1.2);
+}
+
+.plat {
+  width: 30px;
+  margin: 10px;
+  transition: all .2s ease-in-out;
+}
+
+.plat:hover {
+  transform: scale(1.2);
+}
+
+.teamCard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

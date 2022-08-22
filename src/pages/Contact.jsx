@@ -4,6 +4,8 @@ import cr7 from '../images/tela.png'
 import { getFirestore, addDoc, collection } from 'firebase/firestore'
 import { initializeApp } from 'firebase/app';
 import firebaseApp from '../services/firestore';
+import '../styles/contact.css'
+
 initializeApp(firebaseApp)
 
 
@@ -51,14 +53,14 @@ class Contact extends Component {
     return (
       <div className='div-mother'>
         <div className='div-son-contact'>
-          <div className='div-content-space-about'>
+          <div className='div-content-space-contact'>
             <div>
               <h1>CONTACT US</h1>
               <span>Before contacting us, read the
                 <Link className="link" to="/faqs"> FAQs </Link>
                 your question might already be answered.</span>
             </div>
-            <form className='div-form'>
+            <form className='div-form-contact'>
               <input
                 name='name'
                 onChange={this.handleChange}
@@ -66,6 +68,7 @@ class Contact extends Component {
                 placeholder='Enter your Name'
                 id="name"
                 type="text"
+                required
               />
               <input
                 name='email'
@@ -83,6 +86,7 @@ class Contact extends Component {
                 placeholder='Facebook, Instagram, WhatsApp'
                 id="name"
                 type="text"
+                required
               />
               <select name="platform" className="input" onChange={this.handleChange}>
                 <option className="input" value="Playstation">Playstation</option>
