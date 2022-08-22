@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import cr7 from '../images/tela.png'
+import logo from "../images/wl-agency-logo.png"
 import '../styles/faqs.css'
 
 class Faqs extends Component {
@@ -31,7 +31,7 @@ class Faqs extends Component {
               </div>
               <div className='faqs-answers' onClick={() => this.setState({ div3: !div3 })}>
                 <h2 className='faqs-questions'>I CAN WATCH THE GAMES?</h2>
-                {div3 ? <span>After the payment we'll talk to decide the besto hour for you and for the player, all games will be on LIVESTREAM, you can watch, comment, share, YOU ARE THE MANAGER!</span> : null}
+                {div3 ? <span>After the payment we'll talk to decide the best hour for you and for the player, all games will be on LIVESTREAM, you can watch, comment, share, YOU ARE THE MANAGER!</span> : null}
               </div>
               <div className='faqs-answers' onClick={() => this.setState({ div4: !div4 })}>
                 <h2 className='faqs-questions'>HOW TRUSTABLE THE SERVICE ARE?</h2>
@@ -40,7 +40,7 @@ class Faqs extends Component {
             </div>
           </div>
           <div className='content-about'>
-            <img src={cr7} alt="CR7" width="500px" />
+            <img src={logo} alt="CR7" width="500px" />
           </div>
         </div>
       </div>
