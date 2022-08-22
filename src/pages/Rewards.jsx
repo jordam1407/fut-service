@@ -14,15 +14,15 @@ class Reward extends Component {
           <h1>CHOOSE ONE SERVICE</h1>
           <div className='div-img'>
             <div className='chose-img'>
-              <img src={rivals} alt="rivals" width="126px" />
+              <img src={rivals} alt="rivals" width="100px" />
               <span>RIVALS</span>
             </div>
             <div className='chose-img'>
-              <img src={champs} alt="champs" width="192px" />
+              <img src={champs} alt="champs" width="153,6px" />
               <span>CHAMPS</span>
             </div>
             <div className='chose-img'>
-              <img src={obj} alt="obj" width="120px" />
+              <img src={obj} alt="obj" width="96px" />
               <span>OBJETIVOS</span>
             </div>
           </div>

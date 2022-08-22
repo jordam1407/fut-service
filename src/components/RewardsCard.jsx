@@ -6,7 +6,7 @@ export default class RewardsCard extends Component {
   render() {
     const rewards = reward.map((prizes) => {
       return (
-        <div className='card-display'>
+        <div className='card-display-reward'>
           <img src={prizes.img} alt="ranking" width="80px" />
           <div  className='div-ul'>
             <div>

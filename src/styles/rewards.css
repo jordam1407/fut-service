@@ -26,7 +26,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0px 30px;
+  margin: 30px;
 }
 
 .div-rewards {
@@ -39,7 +39,7 @@
   align-self: center;
 }
 
-.card-display {
+.card-display-reward {
   width: 350px;
   margin: 20px;
   display: flex;
@@ -68,14 +68,13 @@ ul {
   padding: 0;
 }
 
-li {
+.div-ul li {
   font-family: 'NeuePlakRegular';
   font-weight: 600;
   font-size: 14px;
 	margin: 0;
 	padding: 10px 0 10px 30px;
 	list-style: none;
-  background-image: url('../images/pack.png');
 	background-repeat: no-repeat;
 	background-position: left center;
 	background-size: 20px;
