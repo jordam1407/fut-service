@@ -5,6 +5,9 @@ import obj from "../images/sbc_big.png"
 import gif from "../images/gif.gif"
 import reward from "../images/reward.png";
 import { Link } from 'react-router-dom';
+import twitch from '../images/twitch.png'
+import instagram from '../images/instagram.png'
+import whatsapp from '../images/whatsapp.png'
 
 class Home extends Component {
   render() {
@@ -13,25 +16,23 @@ class Home extends Component {
         <div className='div-son'>
           <div className='div-content-space'>
             <h1>WE HELP GROW YOUR ULTIMATE TEAM CLUB</h1>
-            <span>LET US PLAY FOR YOU!</span>
+            <span>Running out of time? Wan't to get good rewards?</span>
             <span>Our high experienced pro-players, can push your UT Club to a whole new
-              level, we’re here to help you in any game mode.</span>
+              level, we're here to help you in any game mode.</span>
             <Link className='link' to="/store">
-              <div className='home-img'>
-                <div className='home-img1'>
-                  <img src={rivals} alt="rivals" width="105px" />
-                  <span>RIVALS</span>
-                </div>
-                <div className='home-img1'>
-                  <img src={champs} alt="champs" width="160px" />
-                  <span>CHAMPS</span>
-                </div>
-                <div className='home-img1'>
-                  <img src={obj} alt="obj" width="100px" />
-                  <span>OBJETIVOS</span>
-                </div>
-              </div>
+              <button className='button-84'>LET US PLAY FOR YOU!</button>
             </Link>
+            <div className='social-logos'>
+              <a href='https://www.instagram.com/jordammendes/' target="_blank" rel="noreferrer">
+                <img className='socialh' src={instagram} alt={`Instagram of Jordam`} />
+              </a>
+              <a href='https://www.twitch.tv/jordam1407' target="_blank" rel="noreferrer">
+                <img className='socialh' src={twitch} alt={`Twitch of Jordam`} />
+              </a>
+              <a href='https://api.whatsapp.com/send?phone=5531975222507' target="_blank" rel="noreferrer">
+                <img className='socialh' src={whatsapp} alt={`Twitch of Jordam`} />
+              </a>
+            </div>
           </div>
         </div>
         <div className='video'>

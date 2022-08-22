@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class About extends Component {
+class Store extends Component {
   render() {
     return (
       <div className='div-mother'>
@@ -17,4 +17,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default Store;
