@@ -39,11 +39,13 @@ h2 {
   font-family: 'NeuePlakRegular';
   font-size: 24px;
   margin: 0;
+  align-self: center;
 }
 
 span {
   font-family: 'NeuePlakRegular';
   font-size: 20px;
+  align-self: center;
 }
 
 header {

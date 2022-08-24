@@ -8,7 +8,6 @@ import Home from './pages/Home';
 import Store from './pages/Store';
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Rewards from './pages/Rewards';
 
 // git push -u origin jordam-trybetunes
 
@@ -22,7 +21,6 @@ class App extends React.Component {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/store" element={<Store />} />
-          <Route exact path="/rewards" element={<Rewards />} />
           <Route exact path="/faqs" element={<Faqs />} />
           <Route exact path="*" element={<ErrorPage />} />
         </Routes>

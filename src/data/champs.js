@@ -4,10 +4,8 @@ import rank3 from '../images/rank3.png'
 import rank4 from '../images/rank4.png'
 import rank5 from '../images/rank5.png'
 import rank6 from '../images/rank6.png'
-// import elite from '../images/two-elite.png'
-// import six from '../images/six-thre.png'
-// import ten from '../images/ten-seven.png'
-// import obj from "../images/sbc_big.png"
+
+
 
 
 const champs = [
@@ -107,30 +105,6 @@ const champs = [
       coins: '150k FIFA Coins',
     }
   },
-
-  //   rivals: {
-  //     twoElite: {
-  //       priceTotal: '20',
-  //       priceEach: '3',
-  //       img: elite,
-  //     },
-  //     sixThree: {
-  //       priceTotal: '15',
-  //       priceEach: '2,5',
-  //       img: six,
-  //     },
-  //     tenSeven: {
-  //       priceTotal: '12',
-  //       priceEach: '2',
-  //       img: ten,
-  //     },
-  //   },
-  //   objectives: {
-  //     img: obj,
-  //     price: '10'
-  //   }
-
-  // },
 ]
 
 export default champs;
