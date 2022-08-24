@@ -82,11 +82,14 @@
 }
 
 .div-ul {
-  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  padding: 15px 15px 0 15px;
+  width: 350px;
+  height: 160px;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
+
 .div-things {
   width: 100%;
   display: flex;
@@ -97,9 +100,14 @@
   margin: 10px 0;
   font-size: 35px;
 }
-.div-things span {
-  border-bottom: 1px black solid;
 
+.card-display-reward h2 {
+  margin: 10px 0;
+  font-size: 35px;
+}
+
+.border {
+  border-bottom: 1px black solid;
 }
 
 ul {
@@ -108,7 +116,6 @@ ul {
 
 .div-ul li {
   font-family: 'NeuePlakRegular';
-  font-weight: 600;
   font-size: 14px;
   margin: 0;
   padding: 10px 0 10px 30px;
@@ -136,6 +143,10 @@ ul {
 
 .plus {
   background-image: url('../images/plus.png');
+}
+
+.hide {
+  display: none;
 }
 
 .select-wins {

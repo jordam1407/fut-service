@@ -12,23 +12,22 @@ export default class RewardsCard extends Component {
       return (
         <div key={index} className='card-display-reward'>
           <img src={prizes.img} alt="ranking" width="80px" />
+          <span>{prizes.points}</span>
           <div className='div-ul'>
-            <div>
-              <li className='pack'>{prizes.rewards[1]}</li>
-              <li className='pack'>{prizes.rewards[2]}</li>
-              <li className='pick'>{prizes.rewards[3]}</li>
-              <li className='totw'>{prizes.rewards[4]}</li>
-            </div>
-            <div>
-              <li className='coin'>{prizes.rewards.coins}</li>
-              <li className='plus'>{prizes.rewards[5]}</li>
-              <li className='plus'>{prizes.rewards[6]}</li>
-              <li className='plus'>{prizes.rewards[7]}</li>
-            </div>
+            {prizes.rewards.map((reward, index) => {
+              return (
+                <div key={index}>
+                  <li className={reward.class}>{reward.item}</li>
+                </div>
+              )
+            })}
           </div>
+          <h2>{`€${prizes.price}`}</h2>
+          <span className='border'><i>Limited offer.</i></span>
         </div>
       )
     });
+
     const rivalsReward = rivals.map((prizes, index) => {
       return (
         <>
@@ -37,24 +36,26 @@ export default class RewardsCard extends Component {
             <span>8 Rivals Wins:</span>
             <div className='div-things'>
               <h2>{`€${prizes.price8}`}</h2>
-              <span><i>Limited offer.</i></span>
+              <span className='border'><i>Limited offer.</i></span>
             </div>
           </div>
         </>
       )
     });
+
     const objectivesRewards = objectives.map((prizes, index) => {
       return (
         <div key={index} className='card-display-reward'>
           <img src={prizes.img} className="rivals-img" alt="ranking" width="80px" />
-              <span>{`${prizes.service} ${prizes.name}:`}</span>
-            <div className='div-things'>
-              <h2>{`€${prizes.price}`}</h2>
-              <span><i>Limited offer.</i></span>
-            </div>
+          <span>{`${prizes.service} ${prizes.name}:`}</span>
+          <div className='div-things'>
+            <h2>{`€${prizes.price}`}</h2>
+            <span className='border'><i>Limited offer.</i></span>
+          </div>
         </div>
       )
     });
+
     return (
       <div className='div-cards-rewards'>
 
