@@ -18,15 +18,15 @@ class Store extends Component {
           <h1>CHOOSE ONE SERVICE</h1>
           <div className='div-img-reward'>
             <div className='chose-img-reward' onClick={() => this.setState({ displayReward: 'Rivals' })}>
-              <img src={rivals} alt="rivals" width="100px" />
+              <img className='chose-img1' src={rivals} alt="rivals" width="100px" />
               <span>RIVALS</span>
             </div>
             <div className='chose-img-reward' onClick={() => this.setState({ displayReward: 'Champions' })}>
-              <img src={champs} alt="champs" width="153,6px" />
+              <img className='chose-img2' src={champs} alt="champs" width="153,6px" />
               <span>CHAMPS</span>
             </div>
             <div className='chose-img-reward' onClick={() => this.setState({ displayReward: 'Objectives' })}>
-              <img src={obj} alt="obj" width="96px" />
+              <img className='chose-img3' src={obj} alt="obj" width="96px" />
               <span>OTHERS</span>
             </div>
           </div>

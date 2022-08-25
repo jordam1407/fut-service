@@ -150,6 +150,10 @@ ul {
   display: none;
 }
 
+.show-itens {
+  cursor: pointer;
+}
+
 .select-wins {
   margin: 5px 0px;
   align-self: center;
@@ -168,4 +172,61 @@ ul {
 
 .rivals-img {
  margin: 20px 0;
+}
+
+@media only screen and (max-width: 480px) {
+  .chose-img-reward {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 130px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+  }
+  .chose-img-reward span {
+    font-size: 14px;
+  }
+
+  .item-image {
+    width: 15%;
+  }
+
+  .div-ul {
+    display: flex;
+    padding: 15px 15px 0 15px;
+    height: fit-content;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .div-ul div {
+   width: fit-content;
+  }
+
+  .div-ul li {
+    font-family: 'NeuePlakRegular';
+    font-size: 12px;
+    width: fit-content;
+    margin: 0;
+    padding: 5px 0 10px 25px;
+    list-style: none;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px;
+  }
+
+  .card-display-reward {
+    width: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .1);
+    transition: all .2s ease-in-out;
+    background-color: #f8f6f3;
+    justify-content: center;
+    align-items: center;
+  }
 }

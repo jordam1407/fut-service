@@ -61,7 +61,7 @@ class Home extends Component {
                 <h1>GET THE BEST FUT CHAMPIONS REWARDS</h1>
                 <span>Our team will get you on the ordered rank! All you need to do is enjoy your rewards.</span>
               </div>
-              <Link className='link' to="/rewards">
+              <Link className='link' to="/store">
                 <button className='button-84'>REWARDS</button>
               </Link>
             </div>
