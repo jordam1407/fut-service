@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import gif from "../images/gif.gif"
+import logo from "../images/wl-agency-logo.png"
+import cr7 from '../images/tela.png'
 import reward from "../images/reward.png";
 import champs from "../images/futchamps.png"
 import rivals from "../images/rivals.png"
@@ -17,8 +19,7 @@ class Home extends Component {
         <div className='div-son'>
           <div className='div-content-space'>
             <h1>WE HELP GROW YOUR ULTIMATE TEAM CLUB</h1>
-            <span>Running out of time? Wan't to get good rewards?</span>
-            <span>Our high experienced pro-players, can push your UT Club to a whole new
+            <span>Running out of time? Wan't to get good rewards?<br></br>Our high experienced pro-players, can push your UT Club to a whole new
               level, we're here to help you in any game mode.</span>
             <Link className='link' to="/store">
               <button className='button-84'>LET US PLAY FOR YOU!</button>
@@ -34,6 +35,10 @@ class Home extends Component {
                 <img className='social-home' src={whatsapp} alt={`Twitch of Jordam`} />
               </a>
             </div>
+          </div>
+          <div className='div-content-space-logo'>
+          <img src={cr7} alt="CR7" width="500px" />
+          <img src={logo} alt="CR7" width="200px" />
           </div>
         </div>
         <div className='video'>

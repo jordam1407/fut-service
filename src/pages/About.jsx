@@ -25,11 +25,11 @@ class About extends Component {
         <div className='meet-about'>
           <div className='div-content-space-meet'>
             <div className='content-text-about'>
-              <div>
+              <div className='who-text'>
                 <h1>MEET OUR TEAM</h1>
                 <span>Our team has four passionate Pro-players with the highest experience levels in FIFA. We share the same feeling about Football, passion!</span>
-                <Team />
               </div>
+                <Team />
             </div>
           </div>
         </div>

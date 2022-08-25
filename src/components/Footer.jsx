@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../images/wl-agency-logo.png"
-import twitch from '../images/twitch.png'
-import instagram from '../images/instagram.png'
-import whatsapp from '../images/whatsapp.png'
+import twitch from '../images/twitchw.png'
+import instagram from '../images/instagramw.png'
+import whatsapp from '../images/whatsappw.png'
 
 export default class Footer extends Component {
 
   render() {
     return (
       <footer>
-        <div className='nav-logo-div'>
+        <div>
           <Link to="/">
-            <img className="nav-logo" src={logo} alt="logo" width='70px' />
+            <img className="nav-logo" src={logo} alt="logo" width='180px' />
           </Link>
         </div>
-        <p>Copyright © 2022 FUT Service - All Rights Reserved.</p>
+        <p className='navbar'>Copyright © 2022 FUT Service - All Rights Reserved.</p>
         <div className='navbar'>
           <div>
             <a href='https://www.instagram.com/jordammendes/' target="_blank" rel="noreferrer">

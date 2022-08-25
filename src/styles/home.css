@@ -2,23 +2,33 @@
 .div-son {
   align-self: center;
   display: flex;
-  width: 80%;
-  height: 480px;
+  padding: 100px;
   align-self: center;
   text-align: center;
-  background-image: url('../images/eacom-franchise-hub-f23-hero-med-xl-7x2.png.adapt.crop5x2.1455w.png');
   background-size: cover;
   border-radius: 6px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .div-content-space {
   display: flex;
   flex-direction: column;
   width: 580px;
+  height: 400px;
   padding: 30PX;
   text-align: left;
+  align-items: center;
   justify-content: space-around;
+}
+.div-content-space span {
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+  text-align: left;
+}
+.div-content-space-logo {
+display: flex;
+align-items: center;
+flex-direction: column;
 }
 
 .social-logos {
@@ -42,19 +52,14 @@
 /* section video */
 
 .video {
-  margin-top: 50px;
-  width: 80%;
-  height: 480px;
+  padding: 100px;
   align-self: center;
-  background-image: url('../images/fundo.png');
   border-radius: 6px;
   background-size: cover;
   background-position: 0px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .div-content-space-video {
-  background-color: rgba(239, 234, 229, 0.6);
   height: inherit;
   display: flex;
   text-align: center;
@@ -91,19 +96,14 @@
 /* section reward */
 
 .reward {
-  margin-top: 50px;
-  width: 80%;
-  height: 480px;
+  padding: 100px;
   align-self: center;
-  background-image: url('../images/fundo.png');
   border-radius: 6px;
   background-size: cover;
   background-position: 0px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .div-content-space-reward {
-  background-color: rgba(239, 234, 229, 0.6);
   height: inherit;
   display: flex;
   text-align: center;
@@ -133,19 +133,18 @@
 /* section chose service */
 
 .chose {
-  margin-top: 50px;
-  width: 80%;
-  height: 480px;
+  padding: 100px;
   align-self: center;
-  background-image: url('../images/fundo.png');
   border-radius: 6px;
   background-size: cover;
   background-position: 0px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.chose span {
+  color: black;
 }
 
 .back-chose {
-  background-color: rgba(239, 234, 229, 0.6);
   display: flex;
   justify-content: space-around;
 }
