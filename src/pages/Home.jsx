@@ -36,8 +36,8 @@ class Home extends Component {
             </div>
           </div>
           <div className='div-content-space-logo'>
-          <img src={cr7} alt="CR7" width="500px" />
-          <img src={logo} alt="CR7" width="200px" />
+          <img className='home-img' src={cr7} alt="CR7" width="500px" />
+          <img className='home-img2' src={logo} alt="CR7" width="200px" />
           </div>
         </div>
         <div className='video'>
@@ -46,7 +46,7 @@ class Home extends Component {
             <div className='content-text-video'>
               <div>
                 <h1>WE’LL PLAY ALL YOUR GAMES ON LIVESTREM</h1>
-                <span>Enjoy the feeling of being the manager, watch your Club get the best possible scores</span>
+                <span>Enjoy the feeling of being the manager, watch your Club get the best possible results, you command we play!</span>
               </div>
               <Link className='link' to="/about">
                 <button className='button-84'>MEET THE TEAM</button>
@@ -76,19 +76,19 @@ class Home extends Component {
               <div className='div-img'>
                 <Link className='link' to="/store">
                   <div className='chose-img'>
-                    <img src={rivals} alt="rivals" width="126px" />
+                    <img className='chose-img1' src={rivals} alt="rivals" width="126px" />
                     <span>RIVALS</span>
                   </div>
                 </Link>
                 <Link className='link' to="/store">
                   <div className='chose-img'>
-                    <img src={champs} alt="champs" width="192px" />
+                    <img className='chose-img2' src={champs} alt="champs" width="192px" />
                     <span>CHAMPS</span>
                   </div>
                 </Link>
                 <Link className='link' to="/store">
                   <div className='chose-img'>
-                    <img src={obj} alt="obj" width="120px" />
+                    <img className='chose-img3' src={obj} alt="obj" width="120px" />
                     <span>OBJECTIVES</span>
                   </div>
                 </Link>

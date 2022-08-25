@@ -1,4 +1,3 @@
-
 .div-son {
   align-self: center;
   display: flex;
@@ -19,16 +18,18 @@
   align-items: center;
   justify-content: space-around;
 }
+
 .div-content-space span {
   display: flex;
   flex-direction: column;
   width: 580px;
   text-align: left;
 }
+
 .div-content-space-logo {
-display: flex;
-align-items: center;
-flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .social-logos {
@@ -209,10 +210,12 @@ flex-direction: column;
     flex-direction: column;
     align-self: center;
     text-align: center;
+    margin-bottom: 50px;
   }
+
   .div-content-space {
     display: flex;
-    padding: 50px;
+    padding: 0;
     width: 80%;
     height: fit-content;
     flex-direction: column;
@@ -221,13 +224,208 @@ flex-direction: column;
     align-self: center;
     justify-content: space-around;
   }
-  .div-content-space h1 {
+
+  h1 {
     font-size: 14px;
   }
+
   .div-content-space span {
     font-size: 14px;
     width: 100%;
   }
 
-  
+  .home-img {
+    width: 90%;
+  }
+
+  .button-84 {
+    font-size: 12px;
+    height: 32px;
+    width: min-content;
+  }
+
+  .video {
+    margin-bottom: 50px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+  }
+
+  .div-content-space-video {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+  }
+
+  .content-video {
+    width: 360px;
+    height: 208px;
+  }
+
+  .content-text-video {
+    display: flex;
+    padding: 0;
+    width: 80%;
+    height: fit-content;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+  }
+
+  .content-text-video span {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .reward {
+    margin-bottom: 50px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+  }
+
+  .div-content-space-reward {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column-reverse;
+    text-align: left;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+  }
+
+  .content-text-reward {
+    display: flex;
+    padding: 0;
+    width: 80%;
+    height: fit-content;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+  }
+
+  .content-text-reward span {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .reward-img {
+    padding: 30px;
+    width: 80%;
+    align-self: center;
+  }
+
+
+  .chose {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .chose span {
+    color: black;
+  }
+
+  .back-chose {
+    display: flex;
+    padding: 0;
+    width: 80%;
+    height: fit-content;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+  }
+
+  .div-content-chose {
+    display: flex;
+    padding: 0;
+    width: 80%;
+    height: fit-content;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+  }
+
+  .div-img {
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .chose-img {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 130px;
+    transition: all .2s ease-in-out;
+  }
+
+  .chose-img1 {
+    width: 70px;
+  }
+
+  .chose-img2 {
+    width: 107px;
+  }
+
+  .chose-img3 {
+    width: 64px;
+  }
+
+  .chose-img:hover {
+    transform: scale(1.1);
+  }
+
+  .chose-img span {
+    font-family: 'NeuePlakBlack';
+    font-size: 14px;
+  }
+
+  .chose-img img {
+    align-self: center;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .content-text-chose {
+    display: flex;
+    padding: 0;
+    width: 80%;
+    height: fit-content;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+  }
+
+  .content-text-chose span {
+    font-size: 14px;
+    width: 100%;
+  }
 }
