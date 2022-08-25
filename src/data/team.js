@@ -11,7 +11,7 @@ import xbox from "../images/xbox.png"
 const Team = [
   {
     name: 'Jordam Mendes',
-    biography: "Jordam has 27 years old, play FIFA since 2013, passionate for his Family, for Football and FIFA, he Support Atlético Mineiro. He's our leader and CEO. Jordam play FUT Champs and Rivals.",
+    biography: "Jordam is 27 years old, play FIFA since 2013, passionate for his Family, for Football and FIFA, he Support Atlético Mineiro. He's our leader and CEO. Jordam play FUT Champs and Rivals.",
     cargo: 'Pro-Player',
     champions: champs,
     rivals: rivals,
@@ -49,7 +49,7 @@ const Team = [
   },
   {
     name: 'Paulo Cesar',
-    biography: "Paulo is an elite player, he started playing FIFA in 2017 and never stop since then. He's a fanatic São Paulo suporter. Paulo play FUT Champs, Rivals and Objectives.",
+    biography: "Paulo is an elite player, he started playing FIFA in 2017 and never stopped playing since. He's a fanatic São Paulo supporter. Paulo play FUT Champs, Rivals and Objectives.",
     champions: champs,
     rivals: rivals,
     obj: obj,

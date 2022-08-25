@@ -19,8 +19,7 @@ class Home extends Component {
         <div className='div-son'>
           <div className='div-content-space'>
             <h1>WE HELP GROW YOUR ULTIMATE TEAM CLUB</h1>
-            <span>Running out of time? Wan't to get good rewards?<br></br>Our high experienced pro-players, can push your UT Club to a whole new
-              level, we're here to help you in any game mode.</span>
+            <span>Running out of time? Want to get good rewards?<br></br>Our highly experienced pro-players can push your Ultimate Club to a whole new level. We're here to help you in any game mode.</span>
             <Link className='link' to="/store">
               <button className='button-84'>LET US PLAY FOR YOU!</button>
             </Link>
@@ -46,9 +45,8 @@ class Home extends Component {
             <img src={gif} alt="ranking" className='content-video' />
             <div className='content-text-video'>
               <div>
-                <h1>WE’LL PLAY ALL YOUR GAMES IN LIVESTREM</h1>
-                <span>Our high experienced pro-players, can push your UT Club to a whole new
-                  level, we’re here to help you in any game mode.</span>
+                <h1>WE’LL PLAY ALL YOUR GAMES ON LIVESTREM</h1>
+                <span>Enjoy the feeling of being the manager, watch your Club get the best possible scores</span>
               </div>
               <Link className='link' to="/about">
                 <button className='button-84'>MEET THE TEAM</button>
@@ -73,7 +71,7 @@ class Home extends Component {
         <div className='chose'>
           <div className='back-chose'>
             <div className='div-content-chose'>
-              <h1>CHOSE YOUR SERVICE</h1>
+              <h1>CHOOSE YOUR SERVICE</h1>
               <span>LET US PLAY FOR YOU!</span>
               <div className='div-img'>
                 <Link className='link' to="/store">
@@ -91,7 +89,7 @@ class Home extends Component {
                 <Link className='link' to="/store">
                   <div className='chose-img'>
                     <img src={obj} alt="obj" width="120px" />
-                    <span>OBJETIVOS</span>
+                    <span>OBJECTIVES</span>
                   </div>
                 </Link>
               </div>
