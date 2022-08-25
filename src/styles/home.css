@@ -201,3 +201,33 @@ flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
+@media only screen and (max-width: 480px) {
+  .div-son {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+  }
+  .div-content-space {
+    display: flex;
+    padding: 50px;
+    width: 80%;
+    height: fit-content;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+  }
+  .div-content-space h1 {
+    font-size: 14px;
+  }
+  .div-content-space span {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  
+}
