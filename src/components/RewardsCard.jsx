@@ -15,13 +15,6 @@ export default class RewardsCard extends Component {
           <img className='item-image' src={prizes.img} alt="ranking" width="80px" />
           <span>{prizes.points}</span>
             <ChampsCard item={prizes.rewards}/>
-            {/* {prizes.rewards.map((reward, index) => {
-              return (
-                <div key={index}>
-                  <li className={reward.class}>{reward.item}</li>
-                </div>
-              )
-            })} */}
           <h2>{`€${prizes.price}`}</h2>
           <span className='border'><i>Limited offer.</i></span>
         </div>
