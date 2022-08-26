@@ -18,14 +18,14 @@ class About extends Component {
               <span>It’s for people that love FIFA, and look to grow and improve the club, that strugle on competitive modes, or simply work a lot and don’t have enought time for it. We’ll help you.</span>
             </div>
           </div>
-          <div className='content-about'>
-            <img src={cr7} alt="CR7" width="700px"  />
+          <div className='div-content-space-logo'>
+            <img  className='home-img' src={cr7} alt="CR7" width="700px"  />
           </div>
         </div>
         <div className='meet-about'>
           <div className='div-content-space-meet'>
-            <div className='content-text-about'>
-              <div className='who-text'>
+            <div className='who-text'>
+              <div>
                 <h1>MEET OUR TEAM</h1>
                 <span>Our team has four passionate Pro-players with the highest experience levels in FIFA. We share the same feeling about Football, passion!</span>
               </div>
