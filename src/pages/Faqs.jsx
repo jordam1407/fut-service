@@ -40,7 +40,7 @@ class Faqs extends Component {
             </div>
           </div>
           <div className='content-about'>
-            <img src={logo} alt="CR7" width="500px" />
+            <img className='logo-faqs' src={logo} alt="CR7" width="500px" />
           </div>
         </div>
       </div>

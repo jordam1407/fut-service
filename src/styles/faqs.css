@@ -45,3 +45,34 @@
   border-bottom: 1px black solid;
   padding: 5px;
 }
+@media only screen and (max-width: 480px) {
+  .div-son-faqs {
+    margin: 0;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .div-son-faqs h2 {
+    font-size: 14px;
+  }
+  
+  .div-son-faqs span {
+    font-size: 14px;
+  }
+  .div-content-space-faqs {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+  }
+
+  .logo-faqs {
+    display: none;
+  }
+}
