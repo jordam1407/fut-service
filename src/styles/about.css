@@ -165,4 +165,8 @@
     justify-content: space-around;
     margin: 0;
   }
+
+  .card-display p {
+    font-size: 14px;
+  }
 }
