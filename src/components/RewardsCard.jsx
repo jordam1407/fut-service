@@ -2,31 +2,26 @@ import React, { Component } from 'react';
 import reward from '../data/champs';
 import rivals from '../data/rivals';
 import objectives from '../data/objectives';
+import ChampsCard from './ChampsCard';
 
 export default class RewardsCard extends Component {
-    state = {
-      active: false,
-    }
 
   render() {
     const { display } = this.props;
-    const {active} = this.state;
 
     const champs = reward.map((prizes, index) => {
       return (
         <div key={index} className='card-display-reward'>
           <img className='item-image' src={prizes.img} alt="ranking" width="80px" />
           <span>{prizes.points}</span>
-          <h4 className='show-itens' onClick={() => this.setState({ active: !active })}><i>Show Rewards:</i></h4>
-          <div className={active ? 'div-ul' : 'hide'}>
-            {prizes.rewards.map((reward, index) => {
+            <ChampsCard item={prizes.rewards}/>
+            {/* {prizes.rewards.map((reward, index) => {
               return (
                 <div key={index}>
                   <li className={reward.class}>{reward.item}</li>
                 </div>
               )
-            })}
-          </div>
+            })} */}
           <h2>{`€${prizes.price}`}</h2>
           <span className='border'><i>Limited offer.</i></span>
         </div>

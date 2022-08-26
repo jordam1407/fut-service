@@ -152,6 +152,8 @@ ul {
 
 .show-itens {
   cursor: pointer;
+  align-self: center;
+  width: fit-content;
 }
 
 .select-wins {
