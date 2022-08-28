@@ -46,7 +46,7 @@ class Contact extends Component {
     const { name } = this.state;
     event.preventDefault()
     this.gravarClientes();
-    alert(`We'll get in touch soon ${name}`)
+    alert(`Rhanks for submiting ${name}`)
   }
 
   render() {
