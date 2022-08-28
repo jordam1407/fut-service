@@ -9,6 +9,7 @@ import Store from './pages/Store';
 import Header from './components/Header'
 import Footer from './components/Footer'
 
+
 // git push -u origin jordam-trybetunes
 
 class App extends React.Component {
