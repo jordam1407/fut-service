@@ -1,39 +1,42 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import cr7 from '../images/tela.png'
-import { getFirestore, addDoc, collection } from 'firebase/firestore'
+import { getFirestore, query, getDocs, doc, setDoc, collection } from 'firebase/firestore'
 import { initializeApp } from 'firebase/app';
 import firebaseApp from '../services/firestore';
 import '../styles/contact.css'
 
 initializeApp(firebaseApp)
 
-
 const firestore = getFirestore();
-const clientes = collection(firestore, 'clientes')
-
 class Contact extends Component {
   state = {
+    id: '',
     name: '',
     email: '',
     answer: '',
-    social: '',
-    platform: 'Playstation',
+    evaluation: 10,
   }
 
+  // componentDidMount = async () => {
+  //   const q = query(collection(firestore, "clientes"));
+  //   const querySnapshot = await getDocs(q);
+  //   const allDocs = querySnapshot.docs.map((doc) => ({ ...doc.data() }));
+  //   this.setState({
+  //     clientes: allDocs,
+  //   })
+  // }
 
-  gravarClientes = () => {
-    const { name, email, answer, social, platform } = this.state;
+
+  gravarClientes = async () => {
+    const { name, email, answer, evaluation } = this.state;
     const date = Date();
-    const newDoc = addDoc(clientes, {
+    await setDoc(doc(firestore, "clientes", name), {
       Name: name,
       Email: email,
       Answer: answer,
-      Social: social,
-      Platform: platform,
+      evaluation: evaluation,
       Data: date,
     });
-    console.log(newDoc);
   }
 
   handleChange = ({ target }) => {
@@ -46,21 +49,22 @@ class Contact extends Component {
     const { name } = this.state;
     event.preventDefault()
     this.gravarClientes();
-    alert(`Rhanks for submiting ${name}`)
+    alert(`Thanks for your review ${name}`)
   }
 
   render() {
+    // const { clientes } = this.state;
+    // clientes ? console.log(clientes.map((item) => item.Name)) : console.log('deu n');
     return (
       <div className='div-mother'>
         <div className='div-son-contact'>
           <div className='div-content-space-contact'>
             <div>
-              <h1>CONTACT US</h1>
-              <span>Before contacting us, read the
-                <Link className="link" to="/faqs"> FAQs </Link>
-                your question might already be answered.</span>
+              <h1>REVIEW</h1>
+              <span>Please tell us what you feel about our service.</span>
             </div>
             <form className='div-form-contact'>
+              <strong>Name:</strong>
               <input
                 name='name'
                 onChange={this.handleChange}
@@ -70,6 +74,7 @@ class Contact extends Component {
                 type="text"
                 required
               />
+              <strong>Email:</strong>
               <input
                 name='email'
                 onChange={this.handleChange}
@@ -77,26 +82,28 @@ class Contact extends Component {
                 placeholder='Enter a valid Email'
                 id="name"
                 type="email"
-                required
               />
-              <input
-                name='social'
-                onChange={this.handleChange}
-                className="input"
-                placeholder='Facebook, Instagram, WhatsApp'
-                id="name"
-                type="text"
-                required
-              />
-              <select name="platform" className="input" onChange={this.handleChange}>
-                <option className="input" value="Playstation">Playstation</option>
-                <option className="input" value="Xbox">Xbox</option>
+              <strong>Rate the service:</strong>
+              <select name="evaluation" className="input" onChange={this.handleChange}>
+                <option className="input" value="10">10</option>
+                <option className="input" value="9">9</option>
+                <option className="input" value="8">8</option>
+                <option className="input" value="7">7</option>
+                <option className="input" value="6">6</option>
+                <option className="input" value="5">5</option>
+                <option className="input" value="4">4</option>
+                <option className="input" value="3">3</option>
+                <option className="input" value="2">2</option>
+                <option className="input" value="1">1</option>
               </select>
+              <strong>
+                Please make a review of the service:
+              </strong>
               <textarea
                 name='answer'
                 onChange={this.handleChange}
                 className="input"
-                placeholder='Enter your Question'
+                placeholder='How was your experience with the service?'
                 id=""
                 cols="40"
                 rows="5"

@@ -1,6 +1,8 @@
 .div-son {
   align-self: center;
   display: flex;
+  min-width: calc(100vw - 100px);
+  justify-content: space-around;
   padding: 100px;
   align-self: center;
   text-align: center;
@@ -53,6 +55,8 @@
 /* section video */
 
 .video {
+  min-width: calc(100vw - 100px);
+  justify-content: space-around;
   padding: 100px;
   align-self: center;
   border-radius: 6px;
@@ -102,6 +106,8 @@
   border-radius: 6px;
   background-size: cover;
   background-position: 0px;
+  min-width: calc(100vw - 100px);
+  justify-content: space-around;
 }
 
 .div-content-space-reward {

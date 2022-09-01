@@ -16,6 +16,7 @@ export default class RewardsCard extends Component {
           <span>{prizes.points}</span>
             <ChampsCard item={prizes.rewards}/>
           <h2>{`€${prizes.price}`}</h2>
+          { prizes.payment }
           <span className='border'><i>Limited offer.</i></span>
         </div>
       )
