@@ -17,24 +17,29 @@ class Contact extends Component {
     evaluation: 10,
   }
 
-  // componentDidMount = async () => {
-  //   const q = query(collection(firestore, "clientes"));
-  //   const querySnapshot = await getDocs(q);
-  //   const allDocs = querySnapshot.docs.map((doc) => ({ ...doc.data() }));
-  //   this.setState({
-  //     clientes: allDocs,
-  //   })
-  // }
+  componentDidMount = async () => {
+    const q = query(collection(firestore, "clientes"));
+    const querySnapshot = await getDocs(q);
+    const allDocs = querySnapshot.docs.map((doc) => ({ ...doc.data() }));
+    this.setState({
+      clientes: allDocs,
+    })
+  }
 
 
   gravarClientes = async () => {
-    const { name, email, answer, evaluation } = this.state;
+    const { name, email, answer, evaluation, clientes } = this.state;
+    const id = clientes ? clientes.map((item) => item.Id) : null;
+    console.log(Math.max(...id));
+    const newId = Math.max(...id) + 1;
+
     const date = Date();
-    await setDoc(doc(firestore, "clientes", name), {
+    await setDoc(doc(firestore, "clientes", name || newId), {
+      Id: newId,
       Name: name,
       Email: email,
       Answer: answer,
-      evaluation: evaluation,
+      Evaluation: evaluation,
       Data: date,
     });
   }
