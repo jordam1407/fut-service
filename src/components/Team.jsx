@@ -8,7 +8,7 @@ export default class Team extends Component {
   render() {
     const teams = team.map((guys) => {
       return (
-        <div className='card-display'>
+        <div key={ guys.name } className='card-display'>
           <img className='profile' src={guys.image} alt={guys.name} />
           <h2>{guys.name}</h2>
           <p>{guys.biography}</p>

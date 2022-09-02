@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Reviews from '../components/Reviews';
 import Team from '../components/Team';
 import cr7 from '../images/tela.png'
 import '../styles/about.css'
@@ -30,6 +31,17 @@ class About extends Component {
                 <span>Our team has four passionate Pro-players with the highest experience levels in FIFA. We share the same feeling about Football, passion!</span>
               </div>
                 <Team />
+            </div>
+          </div>
+        </div>
+        <div className='meet-about'>
+          <div className='div-content-space-meet'>
+            <div className='who-text'>
+              <div>
+                <h1>COSTUMERS REVIEW</h1>
+                <span>What our costumers say about the service?</span>
+              </div>
+              <Reviews />                
             </div>
           </div>
         </div>
