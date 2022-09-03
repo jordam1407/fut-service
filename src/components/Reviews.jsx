@@ -4,21 +4,25 @@ import { initializeApp } from 'firebase/app';
 import firebaseApp from '../services/firestore';
 import Star from './Star';
 import '../styles/review.css'
+import avatars from '../data/avatars';
 
 initializeApp(firebaseApp)
 
 const firestore = getFirestore();
 export default class Reviews extends Component {
+  //item 3, number of reviews to display
   state = {
     item: 3,
   }
 
+//update the state
   handleChange = ({ target }) => {
     this.setState({
       [target.name]: target.value,
     }, this.isValidEmail);
   };
 
+//get the reviews from firebse
   componentDidMount = async () => {
     const q = query(collection(firestore, "clientes"));
     const querySnapshot = await getDocs(q);
@@ -27,15 +31,22 @@ export default class Reviews extends Component {
       clientes: allDocs,
     })
   }
+
+  //create ramdom number to display the avatar
+ randomIntFromInterval = (min, max) => { // min and max included 
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  }
+  
+  
   render() {
     const { clientes, item } = this.state
     let reviews = [];
-    clientes ? reviews = clientes.slice(0, item).map((rev) => {
+    clientes ? reviews = clientes.slice(0, item).map((rev, index) => {
       const stars = rev.Evaluation / 2;
       return (
         <div key={rev.Id} className='card-display-review'>
           <div className='user'>
-            <img width="50px" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="img" />
+            <img width="50px" src={avatars[index] || avatars[this.randomIntFromInterval(0, 6)]} alt="img" />
             <Star star={stars} />
             <h2>{rev.Name}</h2>
           </div>
