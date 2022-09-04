@@ -4,7 +4,7 @@ import { initializeApp } from 'firebase/app';
 import firebaseApp from '../services/firestore';
 import Star from './Star';
 import '../styles/review.css'
-import avatars from '../data/avatars';
+import avatarsRandom from '../data/avatars';
 
 initializeApp(firebaseApp)
 
@@ -28,7 +28,7 @@ export default class Reviews extends Component {
     const querySnapshot = await getDocs(q);
     const allDocs = querySnapshot.docs.map((doc) => ({ ...doc.data() }));
     this.setState({
-      clientes: allDocs,
+      clientes: allDocs.sort(function(){return 0.5 - Math.random()}),
     })
   }
 
@@ -46,7 +46,7 @@ export default class Reviews extends Component {
       return (
         <div key={rev.Id} className='card-display-review'>
           <div className='user'>
-            <img width="50px" src={avatars[index] || avatars[this.randomIntFromInterval(0, 6)]} alt="img" />
+            <img width="50px" src={avatarsRandom[index] || avatarsRandom[this.randomIntFromInterval(0, 6)]} alt="img" />
             <Star star={stars} />
             <h2>{rev.Name}</h2>
           </div>
