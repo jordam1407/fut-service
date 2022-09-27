@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import logo from "../images/wl-agency-logo.png"
+import logo from "../images/wl-agency-logo-ligth.png"
 import twitch from '../images/twitchw.png'
 import instagram from '../images/instagramw.png'
 import whatsapp from '../images/whatsappw.png'

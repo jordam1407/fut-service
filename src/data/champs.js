@@ -9,21 +9,21 @@ const ultimate = 125;
 const rarepp = 75;
 const totw3 = 100;
 const jumbo = 100;
-const btn1 = (
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-    <input type="hidden" name="cmd" value="_s-xclick" />
-    <input type="hidden" name="hosted_button_id" value="J7KJPN9S6A4SN" />
-    <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!" />
-    <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1" />
-  </form>
+const btn1 = ( null
+  // <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+  //   <input type="hidden" name="cmd" value="_s-xclick" />
+  //   <input type="hidden" name="hosted_button_id" value="J7KJPN9S6A4SN" />
+  //   <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!" />
+  //   <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1" />
+  // </form>
 );
-const btn2 = (
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-    <input type="hidden" name="cmd" value="_s-xclick" />
-    <input type="hidden" name="hosted_button_id" value="BFTX89XM5UWAJ" />
-    <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!" />
-    <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1" />
-  </form>
+const btn2 = ( null
+  // <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  //   <input type="hidden" name="cmd" value="_s-xclick" />
+  //   <input type="hidden" name="hosted_button_id" value="BFTX89XM5UWAJ" />
+  //   <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!" />
+  //   <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1" />
+  // </form>
 )
 
 const champs = [

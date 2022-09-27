@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import logo from "../images/wl-agency-logo.png"
+import logo from "../images/wl-agency-logo-ligth.png"
 import './header.css'
 export default class Header extends Component {
 
@@ -9,7 +9,7 @@ export default class Header extends Component {
       <header>
         <div className='nav-logo-div'>
           <Link to="/">
-            <img className="nav-logo" src={logo} alt="logo" width='180px'/>
+            <img className="nav-logo" src={logo} alt="logo" width='160px'/>
           </Link>
         </div>
         <div className='navbar'>
