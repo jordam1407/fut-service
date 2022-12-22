@@ -106,6 +106,8 @@ class Contact extends Component {
               </strong>
               <textarea
                 name='answer'
+                minlength="35"
+                required
                 onChange={this.handleChange}
                 className="input"
                 placeholder='How was your experience with the service?'

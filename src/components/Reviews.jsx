@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import { getFirestore, query, getDocs, collection } from 'firebase/firestore'
 import { initializeApp } from 'firebase/app';
 import firebaseApp from '../services/firestore';
-import Star from './Star';
-import '../styles/review.css'
 import avatarsRandom from '../data/avatars';
 
 initializeApp(firebaseApp)
@@ -54,31 +52,63 @@ export default class Reviews extends Component {
     const { clientes, item } = this.state
     let reviews = [];
     clientes ? clientes.map((rev, index) => {
-      const stars = rev.Evaluation / 2;
       return reviews.push(
-        <div key={rev.Id} className='card-display-review'>
-          <div className='user'>
-            <img width="50px" src={avatarsRandom[index] || avatarsRandom[this.randomIntFromInterval(0, 6)]} alt="img" />
-            <Star star={stars} />
-            <h2>{rev.Name}</h2>
+        <div key={rev.Id} className='flex flex-col justify-center'>
+          <div className='flex justify-center items-center'>
+            <img class='w-16 mx-2' src={avatarsRandom[index] || avatarsRandom[this.randomIntFromInterval(0, 6)]} alt="img" />
+            <span class='font-bold text-3xl mx-2'>{rev.Name}</span>
           </div>
-          <div className='answer'>
-            <p><i>{`"${rev.Answer}"`}</i></p>
-          </div>
+          
+            <p class='mt-4 leading-relaxed text-gray-500 lg:h-20 h-48'><i>{`"${rev.Answer}"`}</i></p>
+          
         </div>
       )
     }) : <div />;
     console.log(reviews[0]);
     return (
-      <div className='center'>
-        <div className='teamCard'>
+      <div>        
           {reviews[item]}
-        </div>
-        <div>
-          <button className="rev" onClick={this.prevRev}>{`< Previous`}</button>
-          <button id="button" className="rev" onClick={this.nextRev}>{`Next >`}</button>
-          {clientes && <p className='rev-p'>{`${item + 1}/${clientes.length}`}</p>}
-        </div>
+          <button
+            aria-label="Previous slide"
+            class="rounded-full border border-gray-600 p-1 mx-2 text-gray-600 hover:bg-gray-900 hover:text-white"
+            onClick={this.prevRev}
+          >
+            <svg
+              class="h-5 w-5 -rotate-180 transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 5l7 7-7 7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+
+          <button
+            aria-label="Next slide"
+            class="rounded-full border border-gray-600 p-1 mx-2 text-gray-600 hover:bg-gray-900 hover:text-white"
+            onClick={this.nextRev}
+          >
+            <svg
+              class="h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 5l7 7-7 7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
       </div>
     )
   }
