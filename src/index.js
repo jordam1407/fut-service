@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import './fonts/Neue-Plak-Regular.ttf'
 import './fonts/NeuePlak-WideExtraBlack.ttf'
 import App from './App';
