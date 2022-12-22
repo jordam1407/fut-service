@@ -70,7 +70,7 @@ export default class Reviews extends Component {
           {reviews[item]}
           <button
             aria-label="Previous slide"
-            class="rounded-full border border-gray-600 p-1 mx-2 text-gray-600 hover:bg-gray-900 hover:text-white"
+            class="rounded-full border border-gray-600 p-1 mx-2 mt-5 text-gray-600 hover:bg-gray-900 hover:text-white"
             onClick={this.prevRev}
           >
             <svg
