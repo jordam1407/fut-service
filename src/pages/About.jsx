@@ -80,10 +80,11 @@ class About extends Component {
           <div className="mb-16 lg:my-40 flex flex-col items-center lg:max-w-screen-md mx-auto lg:pr-5">
 
             <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl sm:leading-none">
-              Boost Your UT Account to the <span class="inline-block text-red-600">Next</span> Level.
+              Maximizing your <span class="inline-block text-red-600">Rewards</span>, minimizing your Stress. 
             </h2>
             <p className="pr-5 mb-5 text-xl text-gray-700 md:text-l">
-              Achieve greatness in FIFA with our boosting service. Our team of expert players has helped countless others in more than 10 countries reach new heights in the game. Make your friends jealous of your FUT Champions Rewards.
+              <span class="inline-block font-bold">Our goal:</span> Help you earn the best possible Reward in Ultimate Team while reducing the stress of competitive play.<br />
+              <span class="inline-block font-bold">Our mission:</span> To be the number one Boosting Service for FIFA while providing top-notch support, guidance, entertainment with the best gameplay in Ultimate Team.
             </p>
             <div className="flex items-center">
               <a
@@ -98,14 +99,14 @@ class About extends Component {
             <div class="container flex flex-col justify-center mx-auto">
               <p class="text-gray-500 text-lg text-center font-normal pb-3">PRO-PLAYERS TEAM</p>
               <h1 class="xl:text-3xl text-3xl font-sans text-center text-gray-900 font-bold pb-6 sm:text-5xl sm:leading-none w-5/6 mx-auto">The talented people with the controller</h1>
-            </div>            
+            </div>
             <div class="mb-16">
               <dh-component>
                 <div class="w-full bg-gray-100 px-10 pt-10">
                   <div class="container mx-auto">
                     <div role="list" aria-label="Behind the scenes People " class="lg:flex md:flex sm:flex items-center xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around">
-                    <Team />
-                      
+                      <Team />
+
                     </div>
                   </div>
                 </div>

@@ -25,6 +25,9 @@ class Home extends Component {
           <div className="mb-16 lg:my-40 lg:max-w-xl lg:pr-5">
 
             <p className="inline-block px-3 py-px mb-4 mr-2 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-400">
+              FIFA 23
+            </p>
+            <p className="inline-block px-3 py-px mb-4 mr-2 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-400">
               FUT Champions
             </p>
             <p className="inline-block px-3 py-px mb-4 mr-2 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-400">
@@ -34,11 +37,10 @@ class Home extends Component {
               objectives
             </p>
             <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl sm:leading-none">
-              We help you <span class="inline-block text-red-600">grow your</span> Ultimate Team Club!
+              Skyrocket your rewards with our FUT <span class="inline-block text-red-600">Boosting Service</span>.
             </h2>
             <p className="pr-5 mb-5 text-xl text-gray-700 md:text-l">
-              Running out of time? Want to get good rewards?<br />
-              Our highly experienced pro-players can push your Ultimate Club to a whole new level. We're here to help you in any game mode.
+            Are you feeling overwhelmed and like you're running out of time to build the best Ultimate Team squad possible? Don't worry, we've got you covered. Our team of highly experienced pro-players are here to help you take your Ultimate Club to new heights.
             </p>
             <div className="flex items-center">
               <a
