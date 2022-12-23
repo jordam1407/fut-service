@@ -98,9 +98,9 @@ const champs = [
   },
   {
     img: rank5,
-    points: '51 Points - (11/9)',
-    ranking: 'Rank 5',
-    wins: '11',
+    points: '20 points',
+    ranking: 'Playoffs',
+    wins: '5',
     price: '25',
     rewards: [
       { item: 'Ultimate Pack (T)', class: 'pack' },
@@ -110,23 +110,6 @@ const champs = [
       { item: 'Comunnity Access', class: 'plus' },
       { item: 'Free Trading tips', class: 'plus' },
       { item: `Pack Worth of ${ultimate + rarepp + 30}k +`, class: 'plus' },
-
-    ]
-  },
-  {
-
-    img: rank6, ranking: 'Rank 6',
-    points: '45 Points - (9/11)',
-    wins: '9',
-    price: '20',
-    rewards: [
-      { item: '100k Pack (T)', class: 'pack' },
-      { item: 'Rare Players Pack (T)', class: 'pack' },
-      { item: '2x TOTS PP (1 of 3) (U)', class: 'pick' },
-      { item: '25k FIFA Coins', class: 'coin' },
-      { item: 'Comunnity Access', class: 'plus' },
-      { item: 'Free Trading tips', class: 'plus' },
-      { item: `Pack Worth of ${ultimate * 2 + rarepp + 25}k +`, class: 'plus' },
 
     ]
   },

@@ -38,7 +38,7 @@ class Home extends Component {
                 objectives
               </p>
               <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl sm:leading-none">
-                Skyrocket your rewards with our FIFA 23 <span class="inline-block text-red-600">Boosting Service</span>.
+                Skyrocket your rewards with our FIFA <span class="inline-block text-red-600">Boosting Service</span>.
               </h2>
               <p className="pr-5 mb-5 text-xl text-gray-700 md:text-l">
                 Are you feeling overwhelmed and like you're running out of time to build the best Ultimate Team squad possible? Don't worry, we've got you covered. Our team of highly experienced pro-players are here to help you take your Ultimate Club to new heights.
@@ -120,7 +120,7 @@ class Home extends Component {
         <div className="container flex flex-col justify-center mx-auto">
           <a
             href="/store"
-            className="inline-flex mx-auto w-1/6 items-center justify-center h-10 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-red-600 shadow hover:bg-red-700 focus:shadow-outline focus:outline-none"
+            className="inline-flex mx-auto lg:w-1/6 items-center justify-center h-10 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-red-600 shadow hover:bg-red-700 focus:shadow-outline focus:outline-none"
           >
             Place an order
           </a>
