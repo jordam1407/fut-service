@@ -16,9 +16,7 @@ export default class ChampsCard extends Component {
         <div className={active ? 'div-ul' : 'hide'}>
           {item.map((reward, index) => {
             return (
-              <div key={index}>
-                <li className={reward.class}>{reward.item}</li>
-              </div>
+              <li className={reward.class}>{reward.item}</li>
             )
           })}
         </div>

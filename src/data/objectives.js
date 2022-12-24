@@ -1,22 +1,24 @@
 import obj from '../images/sbc_big.png'
 const objectives = [
   {
-    name: 'Objectives wins',
+    name: 'Objectives wins 1 - 7',
     img: obj,
-    service: '1 ~ 10',
-    price: '5',
+    price: '8',
   },
   {
-    name: 'Objectives wins',
+    name: 'Objectives wins 8 - 13',
     img: obj,
-    service: '11 ~ 20',
-    price: '10'
+    price: '16'
   },
   {
-    name: 'Objectives wins',
+    name: 'Objectives wins 14 - 22',
     img: obj,
-    service: '21+',
-    price: '20',
+    price: '26',
+  },
+  {
+    name: '1 Swap Token',
+    img: obj,
+    price: '8',
   },
   {
     name: 'Squad Builder Help',

@@ -28,6 +28,7 @@ export default class Reviews extends Component {
     this.setState({
       clientes: allDocs.sort(function () { return 0.5 - Math.random() }),
     })
+    console.log('reading');
   }
 
   //create ramdom number to display the avatar
@@ -48,6 +49,7 @@ export default class Reviews extends Component {
       item: item === 0 ? clientes.length - 1 : item - 1,
     })
   }
+
   render() {
     const { clientes, item } = this.state
     let reviews = [];
@@ -64,7 +66,6 @@ export default class Reviews extends Component {
         </div>
       )
     }) : <div />;
-    console.log(reviews[0]);
     return (
       <div>        
           {reviews[item]}
