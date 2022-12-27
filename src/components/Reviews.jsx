@@ -22,13 +22,13 @@ export default class Reviews extends Component {
 
   //get the reviews from firebse
   componentDidMount = async () => {
+    console.log('reading');
     const q = query(collection(firestore, "clientes"));
     const querySnapshot = await getDocs(q);
     const allDocs = querySnapshot.docs.map((doc) => ({ ...doc.data() }));
     this.setState({
       clientes: allDocs.sort(function () { return 0.5 - Math.random() }),
     })
-    console.log('reading');
   }
 
   //create ramdom number to display the avatar

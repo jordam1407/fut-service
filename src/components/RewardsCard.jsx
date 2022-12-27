@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import reward from '../data/champs';
 import rivals from '../data/rivals';
 import objectives from '../data/objectives';
-import ChampsCard from './ChampsCard';
 
 export default class RewardsCard extends Component {
 
@@ -11,27 +10,27 @@ export default class RewardsCard extends Component {
 
     const champs = reward.map((prizes, index) => {
       return (
-        <div key={index} class="w-64 mb-4 p-4 bg-white mx-4 shadow-lg rounded-2xl dark:bg-gray-800">
+        <div key={index} class="w-64 mb-4 p-4 bg-white mx-4 shadow-lg rounded-2xl">
           <div className="flex items-center justify-between mb-2">
             <p className="text-lg font-bold leading-5">{prizes.ranking}</p>
             <img className='w-10' src={prizes.img} alt="champs" />
           </div>
-          <p class="text-3xl font-bold text-gray-900 dark:text-white">
+          <p class="text-3xl font-bold text-gray-900">
             {`$${prizes.price}`}
             <span class="text-sm text-gray-300">
               / weekly
             </span>
           </p>
-          <li class="mt-4 text-xs text-gray-600 dark:text-gray-100">
+          <li class="mt-4 text-xs text-gray-600">
             This package include 1 WL entry.
           </li>
-          <li class="mt-4 text-xs text-gray-600 dark:text-gray-100">
-          10% discount for 4+ orders.
+          <li class="mt-4 text-xs text-gray-600">
+            10% discount for 4+ orders.
           </li>
-          <li class="mt-4 text-xs text-gray-600 dark:text-gray-100">
-          This package doesn't include Playoffs.
+          <li class="mt-4 text-xs text-gray-600">
+            This package doesn't include Playoffs.
           </li>
-          <ul class="w-full mt-6 mb-6 text-sm text-gray-600 dark:text-gray-100">
+          <ul class="w-full mt-6 mb-6 text-sm text-gray-600">
             {prizes.rewards.map((reward, index) => {
               return (
                 <li key={index} className='mb-3 flex items-center'>
@@ -44,7 +43,7 @@ export default class RewardsCard extends Component {
             })}
           </ul>
           <button type="button" class="py-2 bottom-10 px-4 mt-8 bg-red-600 hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
-            Add to Cart
+            Order Now
           </button>
         </div>
 
@@ -53,53 +52,47 @@ export default class RewardsCard extends Component {
 
     const rivalsReward = rivals.map((prizes, index) => {
       return (
-        <div key={index} class="w-64 mb-4 p-4 bg-white mx-4 shadow-lg rounded-2xl dark:bg-gray-800">
+        <div key={index} class="w-64 mb-4 p-4 bg-white mx-4 shadow-lg rounded-2xl">
           <div className="flex items-center justify-between mb-2">
             <p className="text-lg font-bold leading-5">{prizes.division}</p>
             <img className='w-24' src={prizes.img} alt="champs" />
           </div>
-          <p class="text-3xl font-bold text-gray-900 dark:text-white">
+          <p class="text-3xl font-bold text-gray-900">
             {`$${prizes.price8}`}
             <span class="text-sm text-gray-300">
               / weekly
             </span>
           </p>
-          <p class="mt-4 text-xs text-gray-600 dark:text-gray-100">
-            This package includes 8 rivals wins. You need to be in one of the above divisions.
-          </p>
-          <ul class="w-full mt-6 mb-6 text-sm text-gray-600 dark:text-gray-100">
-            
-          </ul>
+          <li class="mt-4 text-xs text-gray-600">
+            This package includes 8 rivals wins.
+          </li>
+          <li class="mt-4 text-xs text-gray-600">
+            You need to be in one of the above divisions.
+          </li>
           <button type="button" class="py-2 bottom-10 px-4 mt-8 bg-red-600 hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
-            Add to Cart
+            Order Now
           </button>
         </div>
       )
     });
 
-    // const rivalsReward = rivals.map((prizes, index) => {
-    //   return (
-    //     <>
-    //       <div key={index} className='card-display-reward'>
-    //         <img src={prizes.img} className="rivals-img" alt="ranking" width="220px" />
-    //         <span>8 Rivals Wins:</span>
-    //         <div className='div-things'>
-    //           <h2>{`€${prizes.price8}`}</h2>
-    //           <span className='border'><i>Limited offer.</i></span>
-    //         </div>
-    //       </div>
-    //     </>
-    //   )
-    // });
-
     const objectivesRewards = objectives.map((prizes, index) => {
       return (
-        <div key={index} className='card-display-reward'>
-          <img src={prizes.img} className="rivals-img" alt="ranking" width="80px" />
-          <span>{`${prizes.service} ${prizes.name}:`}</span>
-          <div className='div-things'>
-            <h2>{`€${prizes.price}`}</h2>
-            <span className='border'><i>Limited offer.</i></span>
+        <div key={index} class="w-64 mb-4 p-4 bg-white mx-4 shadow-lg rounded-2xl">
+          <div className="flex items-center justify-between mb-2">
+            <p className="text-lg font-bold leading-5">{prizes.name}</p>
+            <img className='w-10' src={prizes.img} alt="champs" />
+          </div>
+          <p class="text-3xl font-bold text-gray-900">
+            {`$${prizes.price}`}
+          </p>
+          <div class="flex flex-col justify-between">
+            <p class="mt-4 text-xs text-gray-600 lg:h-24">
+              {prizes.package}
+            </p>
+            <button type="button" class="py-2 self-end px-4 mt-8 bg-red-600 hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
+              Order Now
+            </button>
           </div>
         </div>
       )
