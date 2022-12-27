@@ -99,7 +99,7 @@ export default class RewardsCard extends Component {
     });
 
     return (
-      <div className='my-16 flex flex-col lg:flex-row mx-auto'>
+      <div className='my-16 flex flex-col lg:flex-row-reverse mx-auto'>
 
         {display === 'Champions' ? champs :
           display === 'Rivals' ? rivalsReward :
