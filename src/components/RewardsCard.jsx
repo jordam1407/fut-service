@@ -28,7 +28,7 @@ export default class RewardsCard extends Component {
             10% discount for 4+ orders.
           </li>
           <li class="mt-4 text-xs text-gray-600">
-            This package doesn't include Playoffs.
+            Playoffs qualification included in this package.
           </li>
           <ul class="w-full mt-6 mb-6 text-sm text-gray-600">
             {prizes.rewards.map((reward, index) => {
@@ -42,9 +42,15 @@ export default class RewardsCard extends Component {
               )
             })}
           </ul>
-          <button type="button" class="py-2 bottom-10 px-4 mt-8 bg-red-600 hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
-            Order Now
-          </button>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href={prizes.stripe}
+          >
+            <button type="button" class="py-2 bottom-10 px-4 mt-8 bg-red-600 hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
+              Order Now
+            </button>
+          </a>
         </div>
 
       )
@@ -69,9 +75,15 @@ export default class RewardsCard extends Component {
           <li class="mt-4 text-xs text-gray-600">
             You need to be in one of the above divisions.
           </li>
-          <button type="button" class="py-2 bottom-10 px-4 mt-8 bg-red-600 hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
-            Order Now
-          </button>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href={prizes.stripe}
+          >
+            <button type="button" class="py-2 bottom-10 px-4 mt-8 bg-red-600 hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
+              Order Now
+            </button>
+          </a>
         </div>
       )
     });
@@ -90,16 +102,22 @@ export default class RewardsCard extends Component {
             <p class="mt-4 text-xs text-gray-600 lg:h-24">
               {prizes.package}
             </p>
-            <button type="button" class="py-2 self-end px-4 mt-8 bg-red-600 hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
-              Order Now
-            </button>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href={prizes.stripe}
+            >
+              <button type="button" class="py-2 self-end px-4 mt-8 bg-red-600 hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
+                Order Now
+              </button>
+            </a>
           </div>
         </div>
       )
     });
 
     return (
-      <div className='my-16 flex flex-col lg:flex-row-reverse mx-auto'>
+      <div className='my-16 flex flex-col lg:flex-row-reverse flex-col-reverse mx-auto'>
 
         {display === 'Champions' ? champs :
           display === 'Rivals' ? rivalsReward :
