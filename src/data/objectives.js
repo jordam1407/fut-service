@@ -1,6 +1,21 @@
 import obj from '../images/sbc_big.png'
 const objectives = [
   {
+    name: 'Objective win',
+    img: obj,
+    stripe: 'https://buy.stripe.com/7sI5lOh137DXgbC4gq',
+    price: '2',
+    type: 'Online games Only',
+    package: <ol class="space-y-1 max-w-md list-disc list-inside text-gray-500 dark:text-gray-400">
+    <li>This service include 1 win in any game mode except FUT Champions/Rivals.</li>
+    <li>Examples:
+      <ul class="space-y-1 ml-5 max-w-md list-disc list-inside text-gray-500 dark:text-gray-400">
+        <li clas="ml-5">Silver Beasts.</li>
+      </ul>
+    </li>
+  </ol>,
+  },
+  {
     name: 'Swap Token',
     img: obj,
     stripe: 'https://buy.stripe.com/28o9C4dOR6zT8JabIP',
