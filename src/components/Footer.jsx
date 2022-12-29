@@ -1,8 +1,4 @@
 import React, { Component } from 'react';
-import logo from "../images/wl-agency-logo-ligth.png"
-import twitch from '../images/twitch.png'
-import instagram from '../images/instagram.png'
-import whatsapp from '../images/whatsapp.png'
 import '../index.css'
 
 export default class Footer extends Component {

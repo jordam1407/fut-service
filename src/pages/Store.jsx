@@ -80,7 +80,7 @@ class Store extends Component {
             </li>
           </div>
         </div>
-        <span id='services-opt' class="text-center"><i>Contac Us if you need custom services.</i></span>
+        <span id='services-opt' class="text-center"><i>After payment you'll be redirected to our WhatsApp contact.</i></span>
         <RewardsCard display={displayReward} />
       </div>
     );
