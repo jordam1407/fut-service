@@ -42,8 +42,8 @@ export default function Header() {
           </li>
           <li><a class="text-base text-[#413F3D] font-semibold hover:text-red-500" href="/faqs">Faqs</a></li>
         </ul>
-        <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 text-sm text-red-600 shadow hover:text-red-700 rounded font-bold transition duration-200" href="/">Sign In</a>
-        <a class="hidden lg:inline-block py-2 px-6 bg-red-600 shadow hover:bg-red-700 text-sm text-white font-bold rounded transition duration-200" href="/">Sign up</a>
+        {/* <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 text-sm text-red-600 shadow hover:text-red-700 rounded font-bold transition duration-200" href="/">Sign In</a>
+        <a class="hidden lg:inline-block py-2 px-6 bg-red-600 shadow hover:bg-red-700 text-sm text-white font-bold rounded transition duration-200" href="/">Sign up</a> */}
       </nav>
       <div class={isNavOpen ? 'navbar-menu relative z-50' : 'navbar-menu relative z-50 hidden'}>
         <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
@@ -75,10 +75,10 @@ export default function Header() {
             </ul>
           </div>
           <div class="mt-auto">
-            <div class="pt-6">
+            {/* <div class="pt-6">
               <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded" href="/">Sign in</a>
               <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-red-600 shadow hover:bg-red-700  rounded" href="/">Sign Up</a>
-            </div>
+            </div> */}
             <p class="my-4 text-xs text-center text-[#413F3D]">
               <span>Copyright © 2022 FUT Service - All Rights Reserved.</span>
             </p>
